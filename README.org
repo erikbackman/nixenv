@@ -1,0 +1,6 @@
+#+title: nixenv.el - bare-bones nix-shell integration for Emacs
+
+I just wanted to load environment variables from a nix-shell in the simplest way possible without using something
+like direnv and Emacs direnv integration.
+
+*WIP!*
