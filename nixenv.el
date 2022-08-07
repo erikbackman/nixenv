@@ -25,6 +25,8 @@
 
 ;;; Code:
 
+;; TODO: Parse env variables etc from declare -p instead?
+
 ;;;###autoload
 (defvar nixenv--dirs nil)
 
