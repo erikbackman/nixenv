@@ -105,3 +105,5 @@
   :init-value nil
   :lighter nixenv-lighter
   :after-hook (nixenv-load))
+
+(provide 'nixenv)
