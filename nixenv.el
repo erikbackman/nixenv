@@ -69,7 +69,9 @@
 	(progn 
 	  (with-current-buffer (current-buffer)
 	    (if-let ((path (nixenv--dir-lookup project)))
-		(setq-local exec-path path)
+		(progn
+		  (setq-local exec-path path)
+		  (setq-local nixenv--status 'on))
 	      (setq nixenv--project project)
 	      (nixenv--load project (lambda (path) (setq-local exec-path path)))
 	      (setq-local nixenv--status 'on)))))))
